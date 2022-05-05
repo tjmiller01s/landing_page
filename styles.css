@@ -5,6 +5,11 @@ nav {
     gap: 15px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero,
 .footer {
     background-color: #1f2937;
@@ -28,6 +33,10 @@ nav {
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937
+}
+
+.content {
+    background-color: white;
 }
 
 .listItems {
@@ -63,4 +72,35 @@ a {
     font-size: 20px;
     color: #1f2937;
     align-self: flex-end;
+}
+
+section>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    height: 80%;
+    width: 80%;
+}
+
+section>section,
+.button {
+    background-color: #3882f6;
+}
+
+.signUp {
+    /* color: #e5e7eb; */
+    /* background-color: #3882f6; */
+    /* margin: 20px; */
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: none;
+    background: #3882f6;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bold;
 }
